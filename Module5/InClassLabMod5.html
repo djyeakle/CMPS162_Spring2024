@@ -1,0 +1,59 @@
+<script type="text/javascript">
+    //strings
+    var countries = ["AustrailiA", "greece", "PERU", "ChInA"];
+    var cpe = countries.map(function(country) {
+                            return country.charAt(0).toUpperCase() + country.slice(1).toLowerCase();
+    });
+
+    console.log(cpe);
+
+    var sentence = "Sam went to the mall";
+    var replacedSentence = sentence.replace("Sam", "Emily");
+
+    console.log(replacedSentence);
+
+    var sentence2 = "The San Francisco 49ers won the super bowl";
+    var replaceSentence2 = sentence2.replace("San Francisco 49ers", "Kansas City Chiefs");
+
+    console.log(replaceSentence2);
+
+    var sentence3 = "It was a warm day in Pittsburgh on Saturday";
+    var lastIndex = sentence3.lastIndexOf("Pittsburgh");
+    console.log(lastIndex);
+
+    var userInput = prompt("Please input a value");
+
+    function reverseString(str){
+        return str.split("").reverse().join("");
+    }
+    var reverseValue = reverseString(userInput);
+    console.log(reverseValue);
+
+    //numbers
+    Math.round(13.3); //or .ceiling or .floor
+
+    var luckyNumber = 13.3;
+    Math.round(luckyNumber);
+
+    var roundUp = Math.ceil(luckyNumber);
+    console.log(roundUp);
+
+    var roundDown = Math.floor(luckyNumber);
+    console.log(roundDown);
+
+    var whatIsMyLuckyNumber = Math.random();
+    console.log(whatIsMyLuckyNumber);
+
+    var date = new Date();
+    console.log(date);
+
+    var age = prompt("What is your age?");
+    var currentYr = new Date().getFullYear();
+    var birthYear = currentYr - parseInt(age);
+    console.log(birthYear);
+
+    var myYear = new Date().getDay();
+    console.log(myYear);
+    
+
+</script>
