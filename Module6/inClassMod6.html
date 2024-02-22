@@ -1,0 +1,81 @@
+<html>
+    <head><title></title></head>
+    <body>
+        <p id = "ppu"></p>
+
+        <script>
+            var bitcoin = 0;
+            var statusMenu;
+            while( bitcoin < 250) {
+                statusMenu += "<br>Your BitCoin is worth " + bitcoin;
+                bitcoin++;
+            }
+            document.getElementById("ppu").innerHTML = statusMenu;
+        </script>
+    </body>
+</html>
+
+<html>
+    <head><title></title></head>
+    <body>
+        <p id = "ppu2"></p>
+
+        <script>
+        var day;
+        switch(new Date().getDay()){
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Firday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+        }
+            document.getElementById("ppu2").innerHTML = "Today is " + day;
+        </script>
+    </body>
+</html>
+
+<html>
+    <head><title></title></head>
+    <body>
+        <p id = "ppu0"></p>
+
+        <script>
+            function greetings(){
+                return "Good Evening";
+            }
+            var output = greetings();
+
+            document.getElementById("ppu0").innerHTML = output;
+        </script>
+    </body>
+</html>
+
+
+
+
+
+<script type="text/javascript">
+    var result = " ";
+    var i = 0;
+    do {
+        i += 1;
+        result += i + " ";
+    }
+    while(i > 0 && i < 5);
+</script>
