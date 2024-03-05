@@ -1,0 +1,26 @@
+<html>
+    <title>Changes</title>
+    <head>
+        <script type="text/javascript" src="./js/buttons.js"></script>
+    </head>
+    <body>
+        <br>
+        <br>
+        <input type="text" id="txtUserName" value="Username" oninput="chgTxtColor()">
+
+        <br>
+        <p id="p1">Pirates are Awesome</p>
+        <p id="p2">Pioneers are better</p>
+        <button type="button" onclick="enlargeText()">Biggie Size</button>
+        <button type="button" onclick="decreaseText()">Small Fry</button>
+
+        <script>
+            function chgTxtColor() {
+                var textField = document.getElementById("txtUserName");
+                txtUserName.style.color = "rgb(34,139,34)";
+                txtUserName.style.borderBlockColor = "hotpink";
+                //change all the things...make it fun!
+            }
+        </script>
+    </body>
+</html>
