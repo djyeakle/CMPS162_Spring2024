@@ -1,0 +1,41 @@
+<html>
+    <title>Programming Assignment 8</title>
+    <head>
+        <script>
+            function setCookie() {
+                var cookieName = prompt("Enter Cookie Name");
+                var cookieValue = "cookie value"
+                document.cookie = cookieName + "=" + cookieValue;
+                alert("Cookie set successfully");
+            }
+            var newWindow;
+            function openWindow() {
+                newWindow = window.open("", "_blank", "width=500,height=500");
+                newWindow.document.write("<h1>New Window</h1>");
+            }
+            function closeWindow() {
+                newWindow.close();
+                alert("Window Closed");
+            }
+            function checkGPSAvailability() {
+                if (navigator.geolocation) {
+                    alert("Available!");
+                } else {
+                    alert("Not Available");
+                }
+            }
+            function showGPSLocation() {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    alert("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude);
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Set Cookie" onClick="setCookie()">
+        <input type="button" value="Open Window" onClick="openWindow()">
+        <input type="button" value="Close Window" onClick="closeWindow()">
+        <input type="button" value="GPS Available" onClick="checkGPSAvailability()">
+        <input type="button" value="GPS Coordinates" onClick="showGPSLocation()">
+    </body>
+</html>
