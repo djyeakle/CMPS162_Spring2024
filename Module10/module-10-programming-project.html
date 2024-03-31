@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CMPS 162: Module 10 Programming Project</title>
+<style>* { font-family: monospace; }</style>
+<script>
+
+//-----------------//
+// try catch //
+//-----------------//
+console.log("Browser Version");
+
+// 1. Implement a Try Catch routeine into this code below
+  var results = 12;
+    try {
+        console.log(results); 
+    } catch(error) {
+        console.log('An error occured:', error.message);
+    }
+
+// 2. Take the code produced in #1 and create a routine that will generate an error 
+//    provide that code here
+
+    try {
+        console.log(result); 
+    } catch(error) {
+        console.log('An error occured:', error.message);
+    }
+
+// 3. Provide in words what the output of the error is here
+
+    // The error occurs because of the misspelled variable. 
+    // The output will be "An error occured: result is not defined"
+
+//-----------------//
+// Finally //
+//-----------------//
+console.log("Finally");
+
+// 1. Create a try catch and finally with the following details
+    try {
+      console.log(Trying);
+    } catch(error) {
+      console.log('An error occured:', error.message);
+    } finally {
+      console.log('Finally blocked executed');
+    }
+  
+// 2. Take the code from #1 in Finally and take first part and ensure it's not produced
+//    as an error and create a way to perform a finally statement with the following output
+      
+    try {
+      console.log(Trying);
+    } catch(error) {
+      console.log('An error occured:', error.message);
+    } finally {
+      console.log('Finally blocked it, yay');
+    }
+
+
+//-----------------//
+// Throw //
+//-----------------//
+console.log("Throw");
+  
+// 1. Create a try to validate if the variable number is a numeric value
+   var number = "b";
+
+   try {
+    if (isNaN(number)) {
+        alert("Yes!");
+    }
+    } catch(error) {
+
+    }
+
+// 2. Append the code from #1 and add the ability to create a throw with a response of
+    try {
+    if (isNaN(number)) {
+        throw new Error("Not a numeric value");
+    } else {
+        console.log("It is a numeric value"); 
+    }
+    } catch(error) {
+
+    } 
+
+// 3. Provide an Else response with the output
+    try {
+    if (isNaN(number)) {
+        throw new Error("Not a numeric value");
+    } else {
+        console.log("It is a numeric value"); 
+    } 
+    } catch(error) {
+        
+    }
+
+// 4. Provide a catch error with a response of 
+    try {
+    if (isNaN(number)) {
+        throw new Error("Not a numeric value");
+    } else {
+        console.log("It is a numeric value"); 
+    } 
+    } catch (error) {
+        console.log(error.message);
+    }
+
+
+
+</script>
+</head>
+<body>
+  See console!
+</body>
+</html>
