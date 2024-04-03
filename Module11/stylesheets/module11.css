@@ -1,0 +1,29 @@
+.message-container {
+    display: flex;
+    overflow: hidden;
+    height: 4vh;
+}
+
+.message-input {
+    color: cadetblue;
+    border-radius: 2px;
+}
+
+.note-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.note-button {
+    padding: 10px;
+    background-color: cadetblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    top: 50px;
+    left: 14px;
+}
